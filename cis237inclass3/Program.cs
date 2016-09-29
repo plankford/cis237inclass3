@@ -10,6 +10,8 @@ namespace cis237inclass3
     {
         static void Main(string[] args)
         {
+            SalaryEmployee sEmployee = new SalaryEmployee("Patrick", "Lankford", new DateTime(2011, 10, 14), 1428.65m);
+            Console.WriteLine(sEmployee.NameAndSalary());
         }
     }
 }
