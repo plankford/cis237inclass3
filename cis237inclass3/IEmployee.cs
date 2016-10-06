@@ -8,5 +8,7 @@ namespace cis237inclass3
 {
     interface IEmployee
     {
+
+
     }
 }
