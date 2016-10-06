@@ -8,10 +8,6 @@ namespace cis237inclass3
 {
     interface IEmployee
     {
-<<<<<<< HEAD
-
-
-=======
         //Declare all the public methods and properties that must be implemented
         //in child class
 
@@ -20,6 +16,6 @@ namespace cis237inclass3
         string GetAllEmployeeInformation();
 
         decimal GetYearlySalary();
->>>>>>> acfdab5b35cdb10ee5d40b0d95ee5429dbfdaee1
+
     }
 }
