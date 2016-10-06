@@ -20,6 +20,31 @@ namespace cis237inclass3
             Console.WriteLine(hEmployee.ToString());
             Console.WriteLine(hEmployee.GetYearlySalary());
             Console.WriteLine(hEmployee.GetAllEmployeeInformation());
+
+            //Declare new collection
+            IEmployeeCollection employeeCollection;
+            //Instantiate the collection with the concrete class even though it is going into an interface
+            employeeCollection = new EmployeeCollection();
+            //Call the method below to add the employee to the collection
+            AddNewEmployees(employeeCollection);
+
+            //Send collection to the print method
+            PrintEmployees(employeeCollection);         
+        }
+
+        static void AddNewEmployees(IEmployeeCollection employeeCollection)
+        {
+            //Add a couple of Salary Employees
+            employeeCollection.add("James", "Kirk", new DateTime(2016, 3, 2), 523m);
+            employeeCollection.add("Jane", "Doe", new DateTime(2016, 2, 1), 875m);
+            //Add a couple of Hourly Employees
+            employeeCollection.add("John", "Doe", new DateTime(2016, 5, 4), 48m, 40);
+            employeeCollection.add("Jimmy", "Neutron", new DateTime(2016, 6, 21), 53m, 38);
+        }
+
+        static void PrintEmployees(IEmployeeCollection employeeCollection)
+        {
+            Console.WriteLine(employeeCollection.GetPrintString());
         }
     }
 }
