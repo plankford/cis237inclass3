@@ -8,5 +8,13 @@ namespace cis237inclass3
 {
     interface IEmployee
     {
+        //Declare all the public methods and properties that must be implemented
+        //in child class
+
+        int GetEmploymentDurationInYears();
+
+        string GetAllEmployeeInformation();
+
+        decimal GetYearlySalary();
     }
 }
