@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cis237inclass3", "cis237inc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeLibrary", "EmployeeLibrary\EmployeeLibrary.csproj", "{1E4E8E53-B869-43DA-AD0C-C037F41532FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeLibraryTests", "EmployeeLibraryTests\EmployeeLibraryTests.csproj", "{8F19B601-F8AD-473C-B298-974B30A10308}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1E4E8E53-B869-43DA-AD0C-C037F41532FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E4E8E53-B869-43DA-AD0C-C037F41532FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E4E8E53-B869-43DA-AD0C-C037F41532FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F19B601-F8AD-473C-B298-974B30A10308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F19B601-F8AD-473C-B298-974B30A10308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F19B601-F8AD-473C-B298-974B30A10308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F19B601-F8AD-473C-B298-974B30A10308}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
