@@ -12,24 +12,24 @@ namespace cis237inclass3
         //I can instantiate this array and a Employee type because it is an array.
         //Even though I can't instantiate a single Emoplyee since it is abstract, and array
         //is fine. I just have to make sure that I put non-abstract instances into it
-        IEmployee[] employees = new IEmployee[10];
+        IEmployee[] employees = new Employee[10];
 
-        int currentindex;
+        int currentIndex;
 
         //Constructor
         public EmployeeCollection()
         {
-            currentindex = 0;
+            currentIndex = 0;
         }
 
         public void add(string FirstName, string LastName, DateTime StartDate, decimal Salary)
         {
-            //employees[currentindex++] = new SalaryEmployee(FirstName, LastName, StartDate, Salary);
+            employees[currentIndex++] = new SalaryEmployee(FirstName, LastName, StartDate, Salary);
         }
 
         public void add(string FirstName, string LastName, DateTime StartDate, decimal HourlyRate, decimal HoursPerWeek)
         {
-            //employees[currentindex++] = new HourlyEmployee(FirstName, LastName, StartDate, HourlyRate, HoursPerWeek);
+            employees[currentIndex++] = new HourlyEmployee(FirstName, LastName, StartDate, HourlyRate, HoursPerWeek);
         }
 
         public string GetPrintString()

@@ -8,7 +8,7 @@ namespace cis237inclass3
 {
     //To make a class abstract add the keyword to the class. This way it cannot be instanciated on its own but it will
     //provide a good base for the other two types of employees
-    abstract class Employee
+    abstract class Employee : IEmployee
     {
         //Variables
         protected string _firstName;
@@ -39,7 +39,7 @@ namespace cis237inclass3
             return _firstName + " " + _lastName;
         }
 
-        public int GetEmployeeDurationInYears()
+        public int GetEmploymentDurationInYears()
         {
             //Subtract the ticks of the start date from today, and then get the days and divide it by 364
             return new TimeSpan(DateTime.Now.Ticks - this._startDate.Ticks).Days / 365;
@@ -49,7 +49,7 @@ namespace cis237inclass3
         //To allow the child class to override the method you will need to add the virtual in
         public virtual string GetAllEmployeeInformation()
         {
-            return this._firstName + " " + _lastName + " " + this.GetEmployeeDurationInYears();
+            return this._firstName + " " + _lastName + " " + this.GetEmploymentDurationInYears();
         }
 
         //Get the Yearly Salary of the employee
